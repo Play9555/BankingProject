@@ -1,6 +1,8 @@
 package com.inchoise.creation.model;
 
 
+import java.time.LocalDateTime;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -18,7 +20,7 @@ public class Accountcreation {
 
 	@Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-	private long UserId;
+	private long userId;
 	private long accountNumber;
 	private String accountType;
 	private String accountStatus;
@@ -26,5 +28,6 @@ public class Accountcreation {
 	//under standing custom query procedure jpa try to match the method with entity it is adviced to follow camel case notation
 	//in some case you will end up the errors
 	private String govtId;
-
+    private LocalDateTime createdDate;
+    private LocalDateTime updatedDate;
 }

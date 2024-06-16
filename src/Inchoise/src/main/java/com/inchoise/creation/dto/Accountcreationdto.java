@@ -1,6 +1,8 @@
 package com.inchoise.creation.dto;
 
 
+import java.time.LocalDateTime;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -16,4 +18,6 @@ public class Accountcreationdto {
 	private String accountStatus;
 	private Boolean accountInd;
 	private String govtId;
+    private LocalDateTime createdDate;
+    private LocalDateTime updatedDate;
 }
